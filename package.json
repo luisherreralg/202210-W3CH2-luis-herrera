@@ -7,7 +7,7 @@
   "scripts": {
     "start:ts": "ts-node-esm index.ts",
     "start": "node ./dist/index.js",
-    "build": "tsc --watch",
+    "build:ts": "tsc --watch",
     "test": "jest --watchAll --coverage",
     "prepare": "husky install"
   },
