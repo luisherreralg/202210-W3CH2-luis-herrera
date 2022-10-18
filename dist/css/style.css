@@ -3,6 +3,7 @@
   box-sizing: border-box;
   font-family: 'Amatic SC', cursive;
   font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 body {
@@ -11,22 +12,32 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background-color: rgb(235, 255, 255);
+  background-color: #246eb9;
+}
+
+ul {
+  list-style: circle;
+}
+
+h2 {
+  border-bottom: 1px solid grey;
+  width: 90%;
+  text-align: center;
 }
 
 header,
 footer {
-  color: teal;
-
+  color: #fdfffc;
+  background-color: #f06543;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 header {
   flex: 2 0 auto;
   width: 90vw;
-  background-color: white;
   margin-top: 6vh;
 }
 
@@ -34,13 +45,26 @@ main {
   flex: 10 0 auto;
   margin: 2rem;
   width: 90vw;
-  background-color: white;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5ee9e;
+  border-radius: 10px;
+}
+
+input,
+button {
+  width: 30vw;
+  border: 0;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
 }
 
 footer {
   flex: 1 0 auto;
   width: 90vw;
-  background-color: white;
   margin-bottom: 2vh;
+  padding: 1rem;
 }

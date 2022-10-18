@@ -11,8 +11,8 @@ export class Main extends Component {
     <main>
         <h2>Animales</h2>
         <ul>
-          <slot class="pet-list"></slot>
         </ul>
+        <slot class="pet-list"></slot>
     </main>
     `;
     }
