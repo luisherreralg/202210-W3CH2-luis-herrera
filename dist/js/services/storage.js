@@ -4,7 +4,7 @@
 // Como no sabemos lo que vamos a almacenar le ponemos que esperamos una "T", que ya especificaremos que es
 // También hacemos lo de la T para no poner en los Array<any> (no nos gustan los any)
 export class Store {
-    constructor(store = 'Tasks') {
+    constructor(store = 'Pets') {
         this.store = store;
     }
     // En capsulamos los métodos de localStorage como servicios, para que sea más fácil acceder a ellos

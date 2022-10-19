@@ -11,10 +11,6 @@ export class Main extends Component {
   generateTemplate() {
     return `
     <main>
-        <h2>Animales</h2>
-        <ul>
-        </ul>
-        <slot class="pet-list"></slot>
     </main>
     `;
   }

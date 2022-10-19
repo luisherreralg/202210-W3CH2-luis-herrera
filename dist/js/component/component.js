@@ -1,5 +1,7 @@
 export class Component {
     render(selector, template) {
+        if (!selector)
+            return false;
         const element = document.querySelector(selector);
         if (element === null)
             return false;
@@ -7,17 +9,21 @@ export class Component {
         return true;
     }
     renderAdd(selector, template) {
-        const webElement = document.querySelector(selector);
-        if (webElement === null)
+        if (!selector)
             return false;
-        webElement.innerHTML += template;
+        const element = document.querySelector(selector);
+        if (element === null)
+            return false;
+        element.innerHTML += template;
         return true;
     }
     renderOuter(selector, template) {
-        const webElement = document.querySelector(selector);
-        if (webElement === null)
+        if (!selector)
             return false;
-        webElement.outerHTML = template;
+        const element = document.querySelector(selector);
+        if (element === null)
+            return false;
+        element.outerHTML = template;
         return true;
     }
 }

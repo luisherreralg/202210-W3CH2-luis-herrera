@@ -4,6 +4,6 @@ import { Main } from './component/main.js';
 import { PetList } from './component/pet.list.js';
 new Header('body');
 new Main('body');
-new PetList('ul');
+new PetList('main');
 new Footer('body');
 console.log('Loaded index.js');
