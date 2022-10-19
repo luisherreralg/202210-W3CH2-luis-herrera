@@ -5,7 +5,7 @@ export class AddPet extends Component {
   constructor(public selector: string) {
     super();
     this.template = this.generateTemplate();
-    this.renderOuter(this.selector, this.template);
+    this.render(this.selector, this.template);
   }
 
   generateTemplate() {

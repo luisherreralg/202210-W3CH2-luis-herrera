@@ -10,8 +10,4 @@ export class Pet {
     static idGenerator() {
         return Math.floor(Math.random() * 1000);
     }
-    adopted(adopterName) {
-        this.adoptiveFamily = adopterName;
-        return (this.isAdopted = true);
-    }
 }

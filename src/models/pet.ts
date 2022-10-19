@@ -16,8 +16,8 @@ export class Pet {
     this.adoptiveFamily;
   }
 
-  adopted(adopterName: string) {
-    this.adoptiveFamily = adopterName;
-    return (this.isAdopted = true);
-  }
+  // adopted(adopterName: string) {
+  //   this.adoptiveFamily = adopterName;
+  //   return (this.isAdopted = true);
+  // }
 }
