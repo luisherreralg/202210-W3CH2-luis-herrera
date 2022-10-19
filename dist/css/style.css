@@ -16,7 +16,15 @@ body {
 }
 
 ul {
-  list-style: circle;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+section {
+  width: 100%;
 }
 
 h2 {
@@ -31,7 +39,6 @@ footer {
   background-color: #f06543;
   display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 10px;
 }
 
@@ -43,23 +50,50 @@ header {
 
 main {
   flex: 10 0 auto;
-  margin: 2rem;
-  width: 90vw;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem;
+  width: 90vw;
+  padding: 2rem;
   background-color: #f5ee9e;
   border-radius: 10px;
 }
 
-input,
-button {
-  width: 30vw;
+input {
   border: 0;
   text-align: center;
   font-size: 1rem;
   border-radius: 10px;
+}
+
+button {
+  border: 0;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  width: 30vw;
+}
+
+button:active {
+  background-color: whitesmoke;
+  color: grey;
+}
+
+#title,
+#breed {
+  width: 30vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+div {
+  display: flex;
 }
 
 footer {

@@ -13,11 +13,10 @@ export class Pet {
   ) {
     this.id = Pet.idGenerator();
     this.isAdopted = false;
-    this.adoptiveFamily;
   }
 
-  adopted(adopterName: string) {
-    this.adoptiveFamily = adopterName;
-    return (this.isAdopted = true);
-  }
+  // adopted(adopterName: string) {
+  //   this.adoptiveFamily = adopterName;
+  //   return (this.isAdopted = true);
+  // }
 }
